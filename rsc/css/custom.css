@@ -11,6 +11,13 @@ body {
 }
 
 /*
+ * Links
+ */
+ a {
+  color:black;
+ }
+
+/*
  * Nav
  */
  nav{
@@ -18,7 +25,7 @@ body {
   background:#aaa;
  }
  .nav-link svg{
-  font-size:20px;
+  font-size:35px;
  }
 
 /*
@@ -34,6 +41,9 @@ body {
 
  .ancla{
   height:70px;
+ }
+ .sectionTitle{
+  text-align:center;
  }
 
  /*
@@ -57,6 +67,10 @@ body {
   #skillsSection{
     background-color:#fff;
   }
+  .progress-bar{
+    display:none;
+  }
+
  /*
   * Experience
   */
@@ -75,6 +89,15 @@ body {
  */
 footer{
   background:rgba(240,240,240,0.5);
+}
+
+
+
+/****** PANTALLAS GRANDES ******/
+@media only screen and (min-width: 768px) {
+    body {
+        background-color: lightblue;
+    }
 }
 
 /*
