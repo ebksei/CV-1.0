@@ -41,4 +41,9 @@ $(document).on('scroll', function() {
     	ocultarBarras();
         ocultarPorcentajes();
     }
-})
+});
+
+
+$(document).ready(function(){
+	alert('La página actual se encuentra en construcción.\nDisculpe las molestias.');
+});
