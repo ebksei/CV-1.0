@@ -323,6 +323,11 @@ footer{
   .contenido{
     padding:50px;
  }
+  #imagenInfo{
+    width:200px;
+    height:200px;
+    margin-bottom:50px;
+  }
 }
 
 /*
