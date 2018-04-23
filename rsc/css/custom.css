@@ -202,7 +202,7 @@ footer{
   background-color: #222;
   top: 0;
   bottom: 0;
-  left: 0%;
+  left: 5%;
   margin-left: -3px;
 }
 
@@ -212,6 +212,7 @@ footer{
   position: relative;
   background-color: inherit;
   width: 100%;
+  margin-left:calc(5% - 1px);
 }
 
 /* The circles on the timeline */
@@ -295,6 +296,7 @@ footer{
     width: 100%;
     padding-left: 70px;
     padding-right: 25px;
+    margin-left:0px;
   }
 
 /* Make sure that all arrows are pointing leftwards */
@@ -318,6 +320,9 @@ footer{
   .ancla{
     height:70px;
   }
+  .contenido{
+    padding:50px;
+ }
 }
 
 /*
