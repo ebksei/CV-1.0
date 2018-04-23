@@ -27,6 +27,9 @@ body {
  .nav-link svg{
   font-size:35px;
  }
+ .nav-link.active{
+  color:blue;
+ }
 
 /*
  * Sections
@@ -80,6 +83,9 @@ body {
   }
   .progress-bar{
     display:none;
+  }
+  #idiomas{
+    margin-top:50px;
   }
 
  /*

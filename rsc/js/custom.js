@@ -31,9 +31,25 @@ function ocultarPorcentajes(){
 	$(".progress-bar").html('');
 }
 
-
+/* Marca el botón de menú correspondiente a la sección actual */
+function marcarMenu(){
+	$('.nav-link').removeClass('active');
+	if($(this).scrollTop() < $('#infoSection').position().top - ($(window).height()/2)){
+		$('#linkHome').addClass('active');
+	}else if($(this).scrollTop() < $('#skillsSection').position().top - ($(window).height()/2)){
+		$('#linkInfo').addClass('active');
+	}else if($(this).scrollTop() < $('#experienceSection').position().top - ($(window).height()/2)){
+		$('#linkSkills').addClass('active');
+	}else if($(this).scrollTop() < $('#contactSection').position().top - ($(window).height()/2)){
+		$('#linkExperience').addClass('active');
+	}else{		
+		$('#linkContact').addClass('active');
+	}
+}
 
 $(document).on('scroll', function() {
+	marcarMenu();
+
     if($(this).scrollBottom()>=$('#skillsSection').position().top && $(this).scrollTop() <= $('#experienceSection').position().top){
         rellenarBarras();
     }
@@ -45,5 +61,7 @@ $(document).on('scroll', function() {
 
 
 $(document).ready(function(){
+	marcarMenu();
+	
 	alert('La página actual se encuentra en construcción.\nDisculpe las molestias.');
 });
