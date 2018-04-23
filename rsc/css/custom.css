@@ -13,12 +13,13 @@ body {
   background-size:cover;
   background-attachment: fixed;
   background-repeat: no-repeat;
+  background-position:center;
   color:white;
   font-family: 'JosefinSans',sans-serif;
 }
 
   #title{
-    font-family: 'TravelingTypewriter',serif;
+    font-family: 'JosefinSans',serif;
   }
 
   #imagenInfo{
@@ -91,6 +92,12 @@ body {
   border-top:1px solid #fff;
   border-bottom:1px solid #fff;
  }
+ section .container{
+  padding-bottom:20px;
+    background-color:rgba(255,255,255,0.9);
+    color:#222;
+    border-bottom:20px solid rgba(0,0,0,.7);
+ }
 
  .ancla{
   height:70px;
@@ -104,9 +111,10 @@ body {
  .sectionTitle h2{
     font-size:2.5em;
     text-transform: uppercase;
-    font-family: 'TravelingTypewriter',serif;
-    background:rgba(255,255,255,0.7);
-    color:#222;
+    font-family: 'JosefinSans',serif;
+    background:#666;
+    color:#fff;
+    padding:10px;
  }
 
  /*
@@ -115,8 +123,15 @@ body {
   #infoSection{
     background-color:rgba(255,255,255,0.1);
   }
+  #infoSection .container{
+    max-width:600px;    
+  }
   #descripcionPersonal{
     margin-top:50px;
+  }
+  #infoLista{
+    margin:auto;
+    max-width:500px;
   }
 
  /*
@@ -137,6 +152,9 @@ body {
   */
   #experienceSection{
     background-color:rgba(255,255,255,0.2);
+  }
+  #experienceSection .container{
+    max-width:600px;    
   }
  /*
   * Contact
@@ -169,7 +187,7 @@ footer{
   content: '';
   position: absolute;
   width: 3px;
-  background-color: #eee;
+  background-color: #222;
   top: 0;
   bottom: 0;
   left: 0%;
@@ -191,7 +209,7 @@ footer{
   width: 25px;
   height: 25px;
   left: -10px;
-  background-color: rgba(255,255,255,0.5);
+  background-color: #eee;
   border: 4px solid #222;
   top: 15px;
   z-index: 1;
@@ -233,13 +251,13 @@ footer{
   color:#222;
 }
 .timeline-year{
+  margin-top:-15px;
   font-size:1.2em;
   color:#666;
 }
 .timeline-experience{
   text-align:center;
   font-weight:bolder;
-  margin:10px 0px 20px 0px;
 }
 
 .anotation{

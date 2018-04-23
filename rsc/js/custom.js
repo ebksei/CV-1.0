@@ -65,5 +65,5 @@ $(document).on('scroll', function() {
 $(document).ready(function(){
 	marcarMenu();
 
-	alert('La página actual se encuentra en construcción.\nDisculpe las molestias.');
+	//alert('La página actual se encuentra en construcción.\nDisculpe las molestias.');
 });
