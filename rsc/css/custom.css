@@ -8,28 +8,75 @@
 body {
   min-height: 75rem;
   font-size:700;
+  background:white;
+  background:url('../images/bg.jpg');
+  background-size:cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  color:white;
+  font-family: 'JosefinSans',sans-serif;
 }
 
+  #title{
+    font-family: 'TravelingTypewriter',serif;
+  }
+
+  #imagenInfo{
+    width:150px;
+    height:150px;
+    background:white;
+    margin:auto;
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    transform: rotate(45deg);
+    margin-bottom:30px;
+    background:url('../images/perfil.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    opacity: 0.9;
+    -webkit-box-shadow: 0px 0px 153px -34px rgba(255,255,255,1);
+    -moz-box-shadow: 0px 0px 153px -34px rgba(255,255,255,1);
+    box-shadow: 0px 0px 200px -20px rgba(255,255,255,1);
+  }
 /*
  * Links
  */
  a {
   color:black;
  }
+ /*
+  * Lists
+  */
+
+  li{
+    color:#222;
+  }
 
 /*
  * Nav
  */
  nav{
   padding:10px 5px;
-  background:#aaa;
+  background:#eee;
+  border-bottom:2px solid #999;
  }
  .nav-link svg{
+  font-size:30px;
+  color:#999;
+ }
+ .nav-link.active svg{
   font-size:35px;
+  color:#222;
  }
- .nav-link.active{
-  color:blue;
- }
+
+ /*
+  * Progress Bar
+  */
+  .progress-bar{
+    background-color:#333;
+  }
 
 /*
  * Sections
@@ -41,6 +88,8 @@ body {
   align-items: center;
   justify-content: space-between;
   padding:100px 0px;
+  border-top:1px solid #fff;
+  border-bottom:1px solid #fff;
  }
 
  .ancla{
@@ -55,21 +104,16 @@ body {
  .sectionTitle h2{
     font-size:2.5em;
     text-transform: uppercase;
+    font-family: 'TravelingTypewriter',serif;
+    background:rgba(255,255,255,0.7);
+    color:#222;
  }
 
  /*
   * Info
   */
   #infoSection{
-    background-color:#ccc;
-  }
-  #imagenInfo{
-    width:150px;
-    height:150px;
-    border-radius: 100px;
-    background:white;
-    border:2px solid black;
-    margin:auto;
+    background-color:rgba(255,255,255,0.1);
   }
   #descripcionPersonal{
     margin-top:50px;
@@ -79,7 +123,7 @@ body {
   * Skills
   */
   #skillsSection{
-    background-color:#fff;
+    background-color:rgba(255,255,255,0.2);
   }
   .progress-bar{
     display:none;
@@ -92,13 +136,13 @@ body {
   * Experience
   */
   #experienceSection{
-    background-color:#ccc;
+    background-color:rgba(255,255,255,0.2);
   }
  /*
   * Contact
   */
   #contactSection{
-    background-color:#fff;
+    background-color:rgba(255,255,255,0.2);
   }
 
 /*
@@ -108,27 +152,10 @@ footer{
   background:rgba(240,240,240,0.5);
 }
 
+
 /*
  * Timeline
  */
- 
-
-
-
-
-
-
-
-
-
-
-
-
-/* Set a background color */
-body {
-  background-color: #474e5d;
-  font-family: Helvetica, sans-serif;
-}
 
 /* The actual timeline (the vertical ruler) */
 .timeline {
@@ -141,8 +168,8 @@ body {
 .timeline::after {
   content: '';
   position: absolute;
-  width: 6px;
-  background-color: white;
+  width: 3px;
+  background-color: #eee;
   top: 0;
   bottom: 0;
   left: 0%;
@@ -163,12 +190,16 @@ body {
   position: absolute;
   width: 25px;
   height: 25px;
-  left: -12px;
-  background-color: white;
+  left: -10px;
+  background-color: rgba(255,255,255,0.5);
   border: 4px solid #222;
   top: 15px;
-  border-radius: 50%;
   z-index: 1;
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    transform: rotate(45deg);
 }
 
 /* Add arrows to the right container (pointing left) */
@@ -176,7 +207,7 @@ body {
   content: " ";
   height: 0;
   position: absolute;
-  top: 22px;
+  top: 17px;
   width: 0;
   z-index: 1;
   left: 30px;
@@ -188,16 +219,18 @@ body {
 /* The actual content */
 .timeline-content {
   padding: 20px 20px;
-  background-color: white;
+  background-color: #222;
   position: relative;
-  border-radius: 6px;
 }
 
 .timeline-academic{
-  background-color:#fff;
+  background-color:#222;
+  color:#eee;
 }
+
 .timeline-job{
-  background-color:#ddd;
+  background-color:rgba(255,255,255,0.6);
+  color:#222;
 }
 .timeline-year{
   font-size:1.2em;
@@ -237,7 +270,7 @@ body {
 
 /* Make sure all circles are at the same spot */
   .timeline-right::after {
-    left: 19px;
+    left: 17px;
   }
 
 /* Make all right containers behave like the left ones */
@@ -245,16 +278,6 @@ body {
     left: 0%;
   }
 }
-
-
-
-
-
-
-
-
-
-
 
 /****** PANTALLAS GRANDES ******/
 @media only screen and (min-width: 768px) {
@@ -267,7 +290,12 @@ body {
  * Fonts
  */
  @font-face {
-    font-family: 'Vonique 64';
-    src: url('../fonts/JosefinSans-Regular.ttf');
+    font-family: 'JosefinSans';
+    src: url('../fonts/JuraBook.ttf');
+    font-weight: normal;
+}
+ @font-face {
+    font-family: 'TravelingTypewriter';
+    src: url('../fonts/Sansation_Regular.ttf');
     font-weight: normal;
 }

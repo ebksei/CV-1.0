@@ -47,9 +47,11 @@ function marcarMenu(){
 	}
 }
 
+/* Controla cuándo mostrar las barras de skills */
 $(document).on('scroll', function() {
 	marcarMenu();
 
+	/* NOTA: otra opción es mostrar las barras cuando aparecen en pantalla INDIVIDUALMENTE */
     if($(this).scrollBottom()>=$('#skillsSection').position().top && $(this).scrollTop() <= $('#experienceSection').position().top){
         rellenarBarras();
     }
@@ -62,6 +64,6 @@ $(document).on('scroll', function() {
 
 $(document).ready(function(){
 	marcarMenu();
-	
+
 	alert('La página actual se encuentra en construcción.\nDisculpe las molestias.');
 });
