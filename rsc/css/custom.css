@@ -15,18 +15,16 @@ body {
   background-repeat: no-repeat;
   background-position:center;
   color:white;
-  font-family: 'JosefinSans',sans-serif;
+  font-family: 'JuraBook',sans-serif;
 }
-
-  #title{
-    font-family: 'JosefinSans',serif;
-  }
 
   #imagenInfo{
     width:150px;
     height:150px;
     background:white;
     margin:auto;
+    margin-top:50px;
+    border:2px solid #555;
     -webkit-transform: rotate(45deg);
     -moz-transform: rotate(45deg);
     -ms-transform: rotate(45deg);
@@ -45,8 +43,10 @@ body {
  * Links
  */
  a {
-  color:black;
+    color:black;
+    text-decoration:none !important;
  }
+
  /*
   * Lists
   */
@@ -88,7 +88,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding:100px 0px;
+  padding:0px 0px 100px 0px;
   border-top:1px solid #fff;
   border-bottom:1px solid #fff;
  }
@@ -111,7 +111,6 @@ body {
  .sectionTitle h2{
     font-size:2.5em;
     text-transform: uppercase;
-    font-family: 'JosefinSans',serif;
     background:#666;
     color:#fff;
     padding:10px;
@@ -128,6 +127,8 @@ body {
   }
   #descripcionPersonal{
     margin-top:50px;
+    font-family: 'cuyabra', 'sans-serif';
+    font-size:1em;
   }
   #infoLista{
     margin:auto;
@@ -146,6 +147,12 @@ body {
   #idiomas{
     margin-top:50px;
   }
+  #idiomasTitle{
+    margin-bottom:30px;
+  }
+  #idiomasTitle >h4{    
+    font-size:2em;
+  }
 
  /*
   * Experience
@@ -161,6 +168,11 @@ body {
   */
   #contactSection{
     background-color:rgba(255,255,255,0.2);
+    padding-bottom:75px;
+  }
+  #contactCard{
+    margin-top:50px;
+    margin-bottom:100px;
   }
 
 /*
@@ -204,56 +216,63 @@ footer{
 
 /* The circles on the timeline */
 .timeline-container::after {
-  content: '';
+  content: url('../images/academic.png');
   position: absolute;
-  width: 25px;
-  height: 25px;
-  left: -10px;
+  width: 30px;
+  height: 30px;
+  left: -15px;
   background-color: #eee;
   border: 4px solid #222;
-  top: 15px;
+  top: 9px;
   z-index: 1;
-    -webkit-transform: rotate(45deg);
-    -moz-transform: rotate(45deg);
-    -ms-transform: rotate(45deg);
-    -o-transform: rotate(45deg);
-    transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+.timeline-containeracademic::after {
+  content: url('../images/academic.png');
+}
+.timeline-containerjob::after {
+  content: url('../images/job.png');
 }
 
 /* Add arrows to the right container (pointing left) */
-.timeline-right::before {
+.timeline-container::before {
   content: " ";
   height: 0;
   position: absolute;
-  top: 17px;
+  top: 14px;
   width: 0;
   z-index: 1;
   left: 30px;
-  border: medium solid white;
+  border: medium solid #fff;
   border-width: 10px 10px 10px 0;
-  border-color: transparent white transparent transparent;
+  border-color: transparent #222 transparent transparent;
 }
 
 /* The actual content */
 .timeline-content {
-  padding: 20px 20px;
+  padding: 0px 15px 10px 15px;
   background-color: #222;
   position: relative;
 }
 
 .timeline-academic{
-  background-color:#222;
-  color:#eee;
+  background-color:#fff;
+  color:#222;
 }
 
 .timeline-job{
-  background-color:rgba(255,255,255,0.6);
+  background-color:#fff;
   color:#222;
 }
 .timeline-year{
-  margin-top:-15px;
+  background-color:#222;
   font-size:1.2em;
-  color:#666;
+  color:#fff;   
+  margin-bottom:5px;
 }
 .timeline-experience{
   text-align:center;
@@ -281,14 +300,11 @@ footer{
 /* Make sure that all arrows are pointing leftwards */
   .timeline-container::before {
     left: 60px;
-    border: medium solid white;
-    border-width: 10px 10px 10px 0;
-    border-color: transparent white transparent transparent;
   }
 
 /* Make sure all circles are at the same spot */
   .timeline-right::after {
-    left: 17px;
+    left: 15px;
   }
 
 /* Make all right containers behave like the left ones */
@@ -299,21 +315,21 @@ footer{
 
 /****** PANTALLAS GRANDES ******/
 @media only screen and (min-width: 768px) {
-    body {
-        background-color: lightblue;
-    }
+  .ancla{
+    height:70px;
+  }
 }
 
 /*
  * Fonts
  */
  @font-face {
-    font-family: 'JosefinSans';
+    font-family: 'JuraBook';
     src: url('../fonts/JuraBook.ttf');
     font-weight: normal;
 }
  @font-face {
-    font-family: 'TravelingTypewriter';
-    src: url('../fonts/Sansation_Regular.ttf');
+    font-family: 'cuyabra';
+    src: url('../fonts/cuyabra.otf');
     font-weight: normal;
 }

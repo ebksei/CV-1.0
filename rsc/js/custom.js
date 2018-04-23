@@ -17,6 +17,7 @@ function rellenarBarras(){
 /* Oculta las barras de porcentaje de la sección de skills  */
 function ocultarBarras(){
 	$(".progress-bar").css('display','none').css('width',0);
+    ocultarPorcentajes();
 }
 
 /* Oculta las barras de porcentaje de la sección de skills  */
@@ -51,13 +52,11 @@ function marcarMenu(){
 $(document).on('scroll', function() {
 	marcarMenu();
 
-	/* NOTA: otra opción es mostrar las barras cuando aparecen en pantalla INDIVIDUALMENTE */
-    if($(this).scrollBottom()>=$('#skillsSection').position().top && $(this).scrollTop() <= $('#experienceSection').position().top){
+    if($(this).scrollBottom()>=$('#skillsSection').position().top && $(this).scrollTop() < $('#experienceSection').position().top){
         rellenarBarras();
     }
-    else if($(this).scrollBottom()<$('#skillsSection').position().top || $(this).scrollTop() > $('#experienceSection').position().top){
+    else if($(this).scrollBottom()<$('#skillsSection').position().top || $(this).scrollTop() >= $('#experience').position().top){
     	ocultarBarras();
-        ocultarPorcentajes();
     }
 });
 
