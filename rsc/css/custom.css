@@ -5,6 +5,12 @@
   height:100%;
 
 }
+
+.border-top-small{
+    border-top:1px solid #222;
+    margin-top:50px !important;
+ }
+
 html{
   background:url('../images/bg-mobile.jpg') no-repeat center center fixed;
   background-size: cover;
@@ -17,31 +23,9 @@ body {
   font-size:700;
   height: 100%;
   background:none;
-  color:white;
-  font-family: 'JuraBook',sans-serif;
+  color:#222;
+  font-family: 'Titillium Web',sans-serif;
 }
-
-  #imagenInfo{
-    width:150px;
-    height:150px;
-    background:white;
-    margin:auto;
-    margin-top:50px;
-    border:2px solid #555;
-    -webkit-transform: rotate(45deg);
-    -moz-transform: rotate(45deg);
-    -ms-transform: rotate(45deg);
-    -o-transform: rotate(45deg);
-    transform: rotate(45deg);
-    margin-bottom:30px;
-    background:url('../images/perfil.jpg');
-    background-size: cover;
-    background-repeat: no-repeat;
-    opacity: 0.9;
-    -webkit-box-shadow: 0px 0px 153px -34px rgba(255,255,255,1);
-    -moz-box-shadow: 0px 0px 153px -34px rgba(255,255,255,1);
-    box-shadow: 0px 0px 200px -20px rgba(255,255,255,1);
-  }
 /*
  * Links
  */
@@ -67,11 +51,11 @@ body {
   border-bottom:2px solid #999;
  }
  .nav-link svg{
-  font-size:30px;
+  font-size:25px;
   color:#999;
  }
  .nav-link.active svg{
-  font-size:35px;
+  font-size:30px;
   color:#222;
  }
 
@@ -96,28 +80,68 @@ body {
   border-bottom:1px solid #fff;
  }
  section .container{
-  padding-bottom:20px;
-    background-color:rgba(255,255,255,0.9);
+    padding-bottom:20px;
+    margin:auto;
+    margin-top:100px;
+    background-color:#fff;
     color:#222;
-    border-bottom:20px solid rgba(0,0,0,.7);
  }
 
  .ancla{
   height:70px;
  }
  .sectionTitle{
-  text-align:center;
- }
- .sectionTitle{
-    margin-bottom:50px;
+    text-align:center;
+    margin-bottom:20px;
  }
  .sectionTitle h2{
     font-size:2.5em;
     text-transform: uppercase;
-    background:#666;
-    color:#fff;
+    color:#222;
     padding:10px;
+    font-weight: bold;
  }
+
+
+/*
+ *Main
+ */
+main .container{
+  width:30%;
+  padding:20px 0px;
+  color:#fff;
+  text-shadow: #222 0px 0px 30px;
+}
+
+#imagenInfo{
+  width:150px;
+  height:150px;
+  background:white;
+  margin:auto;
+  margin-top:50px;
+  border:2px solid #666;
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  transform: rotate(45deg);
+  margin-bottom:30px;
+  background:url('../images/perfil.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  opacity: 0.9;
+  -webkit-box-shadow: 0px 0px 153px -34px rgba(255,255,255,1);
+  -moz-box-shadow: 0px 0px 153px -34px rgba(255,255,255,1);
+  box-shadow: 0px 0px 200px -20px rgba(255,255,255,1);
+}
+
+#title h1{
+  font-weight: bold;
+}
+#title p{
+  font-size:1.5em;
+  font-weight:light;
+}
 
  /*
   * Info
@@ -125,17 +149,13 @@ body {
   #infoSection{
     background-color:rgba(255,255,255,0.1);
   }
-  #infoSection .container{
-    max-width:600px;    
-  }
   #descripcionPersonal{
-    margin-top:50px;
-    font-family: 'cuyabra', 'sans-serif';
+    margin-top:10px;
     font-size:1em;
   }
   #infoLista{
     margin:auto;
-    max-width:500px;
+    max-width:275px;
   }
 
  /*
@@ -333,11 +353,36 @@ footer{
   .contenido{
     padding:50px;
  }
+
+ .sectionTitle{
+    margin-top: 20px;
+    margin-bottom:0px;
+ }
+
+
+
+
   #imagenInfo{
     width:200px;
     height:200px;
     margin-bottom:50px;
   }
+  .border-left-big{
+    border-left:2px solid #000;
+    padding-left: 40px;
+  }
+  .border-top-small{
+    margin-top:0px !important;
+    border-top:none;
+ }
+ .nav-link svg{
+  font-size:30px;
+  color:#999;
+ }
+ .nav-link.active svg{
+  font-size:35px;
+  color:#222;
+ }
 }
 
 /*
