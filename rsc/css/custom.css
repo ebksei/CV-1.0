@@ -8,6 +8,7 @@
 
 .border-top-small{
     border-top:1px solid #222;
+	padding-top:50px !important;
     margin-top:50px !important;
  }
 
@@ -107,8 +108,6 @@ body {
  *Main
  */
 main .container{
-  width:30%;
-  padding:20px 0px;
   color:#fff;
   text-shadow: #222 0px 0px 30px;
 }
@@ -373,6 +372,7 @@ footer{
   }
   .border-top-small{
     margin-top:0px !important;
+	padding-top:0px !important;
     border-top:none;
  }
  .nav-link svg{
