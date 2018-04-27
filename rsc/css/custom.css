@@ -30,8 +30,11 @@ body {
  * Links
  */
  a {
-    color:black;
+    color:##285382;
     text-decoration:none !important;
+ }
+ a:hover{
+
  }
 
  /*
@@ -187,7 +190,13 @@ main .container{
  * Footer
  */
 footer{
-  background:rgba(240,240,240,0.5);
+  background:#eee;
+  padding:10px 10px;
+  width:100%;
+  border-top:2px solid #999;
+}
+footer p{
+  margin:0px;
 }
 
 
@@ -342,6 +351,10 @@ footer{
     border-bottom:1px solid #fff;
   }
 
+  section{
+    padding:50px 0px;
+  }
+
   section .container{
     margin-top: 100;
   }
@@ -384,5 +397,12 @@ footer{
   #contactCard{
     margin-top:50px;
     margin-bottom:100px;
+  }
+  footer{
+    position: fixed;
+    left:0px;
+    bottom:0px;
+    bottom:0px;
+    z-index: 2;
   }
 }
